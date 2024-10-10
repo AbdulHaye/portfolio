@@ -1,0 +1,63 @@
+#floating_nav {
+    background-color: var(--color-white);
+    width: 40vw;
+    position: fixed;
+    height: 3.5rem;
+    bottom: 0;
+    right: 30%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.floatingNav_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.8rem;
+}
+
+.floatingNav_menu a {
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--border-radius-3);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floatingNav_menu a:hover {
+    background-color: var(--color-light);
+    color: var(--color-black);
+}
+
+@media screen and (min-width:900px) {
+    #floating_nav {
+        display: none;
+    }
+}
+
+/* TABLETS */
+@media screen and (max-width:900px) {
+    #floating_nav {
+        width: 70vw;
+        right: 15%;
+    }
+}
+
+/* PHONES */
+@media screen and (max-width:500px) {
+    .floatingNav_menu {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .floatingNav_menu {
+        gap: 0.5rem;
+    }
+}

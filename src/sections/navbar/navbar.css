@@ -1,0 +1,47 @@
+nav {
+  background-color: var(--color-primary);
+  width: 100vw;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  transition: var(--transition);
+  box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+}
+
+.nav_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.nav_logo {
+  width: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  gap: 3.5rem;
+}
+
+.nav_menu a:hover {
+  color: khaki;
+}
+
+/* TABLET */
+@media screen and (max-width:900px) {
+  .nav_menu {
+    display: none;
+  }
+
+  .nav_logo {
+    margin: auto;
+  }
+
+}
